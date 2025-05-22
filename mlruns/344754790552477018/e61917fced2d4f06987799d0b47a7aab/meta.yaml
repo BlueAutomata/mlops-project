@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/guill/Documents/GitHub/mlops-project/mlruns/344754790552477018/e61917fced2d4f06987799d0b47a7aab/artifacts
+end_time: 1747884407651
+entry_point_name: ''
+experiment_id: '344754790552477018'
+lifecycle_stage: active
+run_id: e61917fced2d4f06987799d0b47a7aab
+run_name: adorable-elk-686
+run_uuid: e61917fced2d4f06987799d0b47a7aab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747884376100
+status: 4
+tags: []
+user_id: guill

@@ -9,7 +9,7 @@ from steps.predict import Predictor
 from sklearn.metrics import classification_report
 
 # Set up logging
-logging.basicConfig(level=logging.INFO,format='%(asctime)s:%(levelname)s:%(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
 
 def main():
     # Load data
@@ -38,11 +38,10 @@ def main():
     
     # Print evaluation results
     print("\n============= Model Evaluation Results ==============")
-    print(f"Model: {trainer.model_name}")
+    print(f"Model: {trainer.best_model_name}")
     print(f"Accuracy Score: {accuracy:.4f}, ROC AUC Score: {roc_auc_score:.4f}")
     print(f"\n{class_report}")
     print("=====================================================\n")
-
 
 def train_with_mlflow():
 
@@ -82,7 +81,7 @@ def train_with_mlflow():
         mlflow.set_tag('preprocessing', 'OneHotEncoder, Standard Scaler, and MinMax Scaler')
         
         # Log metrics
-        model_params = config['model']['params']
+        model_params = config['models'][0]['params']  # fixed this line
         mlflow.log_params(model_params)
         mlflow.log_metric("accuracy", accuracy)
         mlflow.log_metric("roc", roc_auc_score)
@@ -99,7 +98,7 @@ def train_with_mlflow():
 
         # Print evaluation results
         print("\n============= Model Evaluation Results ==============")
-        print(f"Model: {trainer.model_name}")
+        print(f"Model: {trainer.best_model_name}")
         print(f"Accuracy Score: {accuracy:.4f}, ROC AUC Score: {roc_auc_score:.4f}")
         print(f"\n{class_report}")
         print("=====================================================\n")

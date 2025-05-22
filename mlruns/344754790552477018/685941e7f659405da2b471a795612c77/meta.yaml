@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/guill/Documents/GitHub/mlops-project/mlruns/344754790552477018/685941e7f659405da2b471a795612c77/artifacts
+end_time: 1747884658883
+entry_point_name: ''
+experiment_id: '344754790552477018'
+lifecycle_stage: active
+run_id: 685941e7f659405da2b471a795612c77
+run_name: tasteful-cat-497
+run_uuid: 685941e7f659405da2b471a795612c77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747884626915
+status: 4
+tags: []
+user_id: guill
