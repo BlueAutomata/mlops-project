@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/guill/Documents/GitHub/mlops-project/mlruns/344754790552477018/0f55528dac9e4d18b64c5c409ed969ae/artifacts
+end_time: 1747882744844
+entry_point_name: ''
+experiment_id: '344754790552477018'
+lifecycle_stage: active
+run_id: 0f55528dac9e4d18b64c5c409ed969ae
+run_name: redolent-hare-960
+run_uuid: 0f55528dac9e4d18b64c5c409ed969ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747882738532
+status: 3
+tags: []
+user_id: guill
